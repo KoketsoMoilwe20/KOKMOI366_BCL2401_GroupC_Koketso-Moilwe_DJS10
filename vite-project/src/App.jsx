@@ -6,8 +6,11 @@ const fetchAPI = fetch("https://jsonplaceholder.typicode.com/posts")
 
 fetchAPI.then(response => response.json())
   .then(posts => {console.log(posts);
-    
+
 })
+  .catch(error => {
+    console.error('Error:', error);
+  })
 
 function App() {
 
