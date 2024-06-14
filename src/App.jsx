@@ -27,6 +27,8 @@ function App() {
         : null}
       {error ? <h1>{error}</h1> : null}
       </>
-    )
+    );
 
 }
+
+export default App
